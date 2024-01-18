@@ -1,22 +1,26 @@
 import React from 'react'
 import './Navbar.scss'
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className='navbar'>
+    <header className='header'>
     
-      <img src='./src/assets/logo.png' className='navbar__logo' alt='logo kasa'></img>
-    <ul className='navbar__link'>
+      <img src='./src/assets/logo.png' className='header__logo' alt='logo kasa'></img>
+    
+    <nav>
+    <ul className='header__navbar'>
 
-    <Link to={'/'}>
-    <li  className='navbar__link__accueil' id='id'>Accueil</li>
-    </Link>
-    <Link to={'/about'}>
-    <li className='navbar__link__accueil'   >A propos</li>
-    </Link>
+    <NavLink to={'/'}>
+    <li  className='navbar__link' >Accueil</li>
+    </NavLink>
+
+    <NavLink to={'/about'}>
+    <li className='navbar__link' >A propos</li>
+    </NavLink>
 </ul> 
-    </nav>
+</nav>
+    </header>
   )
 }
 
