@@ -2,7 +2,9 @@ import React from 'react'
 import './Apartment.scss'
 function Apartment() {
   return (
-    <div className='cards'>Titre de la location</div>
+    <div className='card'>
+      <h4 className='card__title'>Titre de la location</h4>
+    </div>
   )
 }
 
