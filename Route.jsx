@@ -1,23 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App.jsx';
 import {createBrowserRouter,RouterProvider,} from "react-router-dom";
+import Home from './src/pages/Home.jsx';
+import About from './src/pages/About.jsx';
+import NotFound from './src/pages/NotFound.jsx';
+import Product from './src/pages/Product.jsx';
+import './index.scss'
+
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Home />,
     //**** */ quand on rajoute un truck a notre url la page not found saffiche*****
-    errorElement: <h1>not found</h1>
+    // errorElement: <h1>not found</h1>
   },
   
   {
-    path: "/apartment",
-    element: <div>appartment</div>,
+    path: "/*",
+    element: <NotFound />,
   },
   {
     path: "/about",
-    element: <div>about</div>,
+    element: <About />,
+  },
+  {
+    path: "/product",
+    element: <Product />,
   },
 ]);
 
