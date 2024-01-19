@@ -3,7 +3,7 @@ import './Apartment.scss'
 function Apartment() {
   return (
     <div className='card'>
-      <h4 className='card__title'>Titre de la location</h4>
+      <h4 className='card__title'>Titre de la<br/>location</h4>
     </div>
   )
 }
