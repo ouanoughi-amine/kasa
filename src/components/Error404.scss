@@ -1,0 +1,21 @@
+.Error__block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(255, 96, 96, 1);
+    gap: 139px;
+    margin: 139px 0;
+    font-size: 36px;
+    line-height: 51.34px;
+    &--image{
+        max-width: 597px;
+        max-height:263px ;
+    }
+   
+    &--link{
+        color: rgba(255, 96, 96, 1);
+        text-decoration: underline;
+        font-size: 18px;
+        line-height: 25.67px;
+    }
+}

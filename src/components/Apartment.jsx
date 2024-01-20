@@ -1,11 +1,15 @@
 import React from 'react'
+import { NavLink } from "react-router-dom";
 import './Apartment.scss'
+
+
 function Apartment() {
   return (
-    <div className='card'>
-      <h4 className='card__title'>Titre de la<br/>location</h4>
-    </div>
-  )
+    <NavLink to={'/product'} className='card'>
+      
+        <h4 className='card__title'>Titre de la<br/>location</h4>
+      
+    </NavLink>
+  );
 }
-
 export default Apartment

@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar.jsx';
-import Banner from '../components/Banner.jsx';
+import BannerHome from '../components/BannerHome.jsx';
 import Gallery from '../components/Gallery.jsx';
 import Footer from '../components/Footer.jsx';
 // import  './Home.scss';
@@ -9,7 +9,7 @@ function Home() {
   return (
     <>
       <Navbar />
-      <Banner />
+      <BannerHome />
       <Gallery />
       <Footer />
     </>
