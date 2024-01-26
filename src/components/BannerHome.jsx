@@ -1,4 +1,3 @@
-import React from 'react'
 import './BannerHome.scss'
 
 function BannerHome() {

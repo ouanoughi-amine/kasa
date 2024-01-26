@@ -1,18 +1,18 @@
-import React from 'react'
 import './Collapse.scss'
 
-function Collapse(props) {
-    const label = props.label;
-    const contentRef = props.contentRef;
+
+
+function Collapse( {className,title, description}) {
+    
   return (
     <div className='block'>
    <div className='block__red'>
-    <h2 className='block__red-title'>{label}</h2>
+    <p className='block__red-title'>{title}</p>
     <img src="./src/assets/dropdown.png" alt="dropdown " />
 
    </div>
    <div className='block__gray' >
-    <p>{contentRef}</p>
+  <p>{description}</p>
     
    </div>
    </div>
@@ -20,3 +20,7 @@ function Collapse(props) {
 }
 
 export default Collapse
+
+
+
+
