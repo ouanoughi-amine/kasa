@@ -1,7 +1,8 @@
 
-import BannerAbout from '../components/BannerAbout';
+import Banner from '../components/Banner';
 import Collapse from '../components/Collapse';
-
+import ImageAboutBanner from '../assets/image-about-banner.png'
+import '../pages/About.scss';
 
 
 const collapseText = [
@@ -28,7 +29,7 @@ const collapseText = [
 function About (){
 return(
 <main className = 'about'>
-<BannerAbout />
+<Banner imgBanner={ImageAboutBanner} showTitleBanner={false} />
 <div className = 'about__collapse'>
     {collapseText.map((item, index) => (
         <Collapse key= {index} className='about__collapse__block'

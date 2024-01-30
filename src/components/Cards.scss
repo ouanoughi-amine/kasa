@@ -1,9 +1,21 @@
 .card{
   height: 340px;
+  max-width: 340px;
+  
    position:relative;
    overflow:hidden;
    border-radius: 10px;
+   &::before {
+    position: absolute;
+    content: "";
+    inset:0;
+    background-color: rgba(136, 125, 125, 0.3);
+}
+   @media (max-width : 900px){
+    height: 255px;
+    
    
+   }
 
    &__overlay {
     position:absolute;

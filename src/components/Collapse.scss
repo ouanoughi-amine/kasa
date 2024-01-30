@@ -1,19 +1,14 @@
 .block{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin:0 200px  30px 200px;
-    display: flex;
+    margin-bottom: 30px;
+    width: 100%;
     &__red{
         display: flex;
         justify-content: space-between;
         align-items: center;
         background-color: rgba(255, 96, 96, 1) ;
-        max-width: 1000px;
-        width: 100%;
         border-radius: 5px;
         padding:10px 20px 10px 15px;
-        z-index: 1;
+
     }
     &__red-title{
         font-size: 24px;
@@ -22,11 +17,11 @@
     &__gray{
         color:rgba(255, 96, 96, 1);
         background-color: rgba(246, 246, 246, 1);
-        max-width: 1000px;
-        width: 100%;
+       
         font-size: 18px;
         line-height: 25.67px;
         padding: 20px;
+        z-index: -1;
         border-radius: 5px;
         position: relative;
         bottom: 5px;

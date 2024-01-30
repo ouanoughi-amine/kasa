@@ -4,6 +4,7 @@ import Collapse from '../components/Collapse';
 import { useParams } from 'react-router-dom';
 import ItemsContainer from '../components/ItemsContainer/ItemsContainer';
 import NotFound from '../pages/NotFound'
+import '../pages/Product.scss'
 
 const Product = () => {
   const { id } = useParams();

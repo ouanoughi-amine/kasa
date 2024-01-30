@@ -1,11 +1,14 @@
 
-import BannerHome from '../components/BannerHome.jsx';
+import Banner from '../components/Banner.jsx';
 import Gallery from '../components/Gallery.jsx';
+import ImageHomeBanner from '../assets/image-home-banner.png'
 
 function Home() {
+  
   return (
+    
     <>
-      <BannerHome />
+      <Banner imgBanner={ImageHomeBanner} showTitleBanner={true} />
       <Gallery />
     </>
 

@@ -8,7 +8,7 @@ function Collapse( {className,title, description}) {
     <div className='block'>
    <div className='block__red'>
     <p className='block__red-title'>{title}</p>
-    <img src="./src/assets/dropdown.png" alt="dropdown " />
+    <img src="../src/assets/dropdown.png" alt="dropdown " />
 
    </div>
    <div className='block__gray' >

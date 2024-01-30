@@ -1,7 +1,11 @@
 .carousel{
     height: 415px;
     position: relative;
-    margin: 0 100px;
+    margin: 0 100px 30px 100px;
+    background-color: antiquewhite;
+    border-radius: 1rem;
+
+
     
     &__img{
         position: absolute;
@@ -9,7 +13,7 @@
         width: 100%;
         height: 100%;
         border-radius: 1rem;
-        z-index: 1;
+
 
     }
     &__arrow{
@@ -20,8 +24,9 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        z-index: 2; 
         padding: 0 25px;  
+        z-index: 1;
+
     }
     &__numbers{
         position: absolute;

@@ -1,0 +1,25 @@
+.host{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    &__name{
+        font-size: 18px;
+        line-height: 22.67px;
+        text-align: right;
+        width: 50%;
+    
+    }
+ 
+    &__image{
+        max-width: 64px;
+        width: 100%;
+        max-height: 64px;
+        height: 64px;
+        background-color: rgba(196, 196, 196, 1);
+        border-radius: 50%;
+
+    }
+}

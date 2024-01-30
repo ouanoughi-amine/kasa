@@ -2,7 +2,9 @@ import './Rate.scss'
 import StarColor from './../../../assets/star-color.png'
 import StarGrey from './../../../assets/star-grey.png'
 
-function Rate({numberStar}) {
+
+
+function Rate({ numberStar }) {
   return (
     <div className='rate'>
      {/* //on indique qu'il y a 5 element dans notre tableau */}
