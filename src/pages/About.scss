@@ -3,5 +3,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   margin: 0 208.5px;
+    gap: 30px;
+//    margin: 38px  208.5px 36px 208.5px;
+   @media  (max-width: 900px){
+    margin: 38px 100px 36px 100px;
+
+   
+    
+   }
 }

@@ -1,5 +1,5 @@
 import Carousel from "../components/Carousel";
-import ApartmentList from '../apartment.json';
+import ApartmentList from '../Data/apartment.json';
 import Collapse from '../components/Collapse';
 import { useParams } from 'react-router-dom';
 import ItemsContainer from '../components/ItemsContainer/ItemsContainer';

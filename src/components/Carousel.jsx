@@ -6,9 +6,8 @@ import { useState } from 'react'
 
 function Carousel({images}) {
 
-const [imageIndex, setImageIndex] =useState (0);
-
-
+const [imageIndex, setImageIndex] = useState (0);
+const notHidden = images.length  > 1;
 
     // Si l'image actuelle est la dernière, revient à la première image
     // Sinon, on passe à l'image suivante.
@@ -28,13 +27,18 @@ const [imageIndex, setImageIndex] =useState (0);
 
   return (
     <div className='carousel'>
-       
+         {/* la div 'carousel__arrow' apparait uniquement si notHidden = true (si images.length > 1)
+         (si le nombre d'element de la liste est sup a 1)  */}
+          {notHidden && 
         <div className='carousel__arrow'>
-            <img src={ArrowLeft} alt="arrow left" onClick={prevImage}/>
+          <img src={ArrowLeft} alt="arrow left" onClick={prevImage}/>
             <img src={ArrowRight} alt="arrow right" onClick={nextImage} />
         </div>
+            }
         <img src={images[imageIndex]} alt='photo appartement'  className='carousel__img'></img>
+        {notHidden &&         
         <p className='carousel__numbers'>{imageIndex + 1}/{images.length}</p>   
+}
     </div>
   )
 }

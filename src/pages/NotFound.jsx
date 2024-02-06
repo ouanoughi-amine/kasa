@@ -7,11 +7,11 @@ const textForLink="Retourner sur la page d’accueil"
 
 function NotFound () {
     return (
-        <>
+        <main>
         <section>
         <Error404 imgError={imageError} textError={textForError} linkText={textForLink}/>
         </section>
-        </>
+        </main>
     )
 }
 export default NotFound

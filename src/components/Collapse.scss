@@ -1,31 +1,98 @@
-.block{
-    margin-bottom: 30px;
-    width: 100%;
-    &__red{
+
+@import '../Variables.scss';
+
+// Ajout de ses deux classes dans les comp parents (about et product)(la width est differente) 
+.collapse--about{
+    width: 1023px;   
+    @media (max-width: 1065px) {
+       width: 100%;
+    }
+}
+
+.collapse--product{
+    width: 582px;
+    
+    @media (max-width: 1235px) {
+        width: 480px;     
+    }
+
+    @media (max-width: 1033px) {
+        width: 415px;     
+    }
+
+    @media (max-width: 915px) {
+        width: 335px;     
+    }
+    @media (max-width: 350px) {
+        width: 250px;     
+    }
+}
+
+/**********************************COLLAPSE***********************************************/
+.collapse {
+
+    &__dropdown {
+        height: 52px;
+        padding: 10px 20px 10px 15px;
+        background-color: $red-background;
+        border-radius: $small-border-radius;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: rgba(255, 96, 96, 1) ;
-        border-radius: 5px;
-        padding:10px 20px 10px 15px;
+    
+        
 
+        @media (max-width: 520px) {
+            height: 40px;
+        }
+
+        @media (max-width: 380px) {
+            height: 30px;
+        }
+
+        .dropdown__title {
+            color:$white-color;
+            font-size: $small-font-size;
+           
+            @media (max-width: 520px) {
+                font-size:$small-font-size;
+            }
+            @media (max-width: 380px) {
+                font-size:13px;
+            }
+        }
+
+        .dropdown__arrow {
+            width: 32px;
+            height: 32px;
+            transition: transform 0.6s ease;
+        }
+
+        .dropdown__arrow--rotated {
+            transform: rotate(-180deg);
+        }
     }
-    &__red-title{
-        font-size: 24px;
-        color: rgba(255, 255, 255, 1);
+    
+    &__text {
+        background-color:$grey-background;
+        border-radius: $small-border-radius;
+        font-size: $small-font-size;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.6s ease;
+        color:$red-color ;
+        
+        @media (max-width: 520px) {
+            font-size: 13px;
+        }
+
+        &--visible {
+            max-height: 300px;
+            transition: max-height 1.5s ease; 
+        }
     }
-    &__gray{
-        color:rgba(255, 96, 96, 1);
-        background-color: rgba(246, 246, 246, 1);
-       
-        font-size: 18px;
-        line-height: 25.67px;
-        padding: 20px;
-        z-index: -1;
-        border-radius: 5px;
-        position: relative;
-        bottom: 5px;
+
+    &__text p{
+        margin: 10px 20px 10px 15px; 
     }
-   
-      
 }

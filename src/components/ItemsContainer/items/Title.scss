@@ -1,14 +1,17 @@
+@import '../Variables.scss';
+
+
 .title{
-    color: rgba(255, 96, 96, 1);
+    color:$red-color;
     margin-bottom: 20px;
 
     &__main{
-        font-size: 36px;
+        font-size: $big-font-size;
         line-height: 51.34px;
 
     }
     &__text{
-        font-size: 18px;
+        font-size: $small-font-size;
         line-height: 25.67px;
     }
     

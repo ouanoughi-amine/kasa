@@ -1,17 +1,41 @@
 @import url('https://fonts.googleapis.com/css2? family= Montserrat:wght@400;500 & display=swap');
+@import './Variables.scss';
+
 
 *{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: $global-font-weight;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-   font-family: 'Montserrat', sans-serif;
-   font-weight: 500;
-   list-style: none;
-   text-decoration: none;
+    list-style: none;
+    text-decoration: none;
    
-}
-body{
-    max-width: 1440px;
-    margin: auto;
+
+// body{
+//     margin: 45px auto 0 auto;
+//     max-width: 1440px;
+
     
+
+// }
+body{
+    margin-top: 45px;
+  
+    main, header{
+        max-width: 1240px;
+        margin: auto;
+
+ @media (max-width: 1240px) {
+    margin:20px 100px 0px 100px
+}
+ @media (max-width: 900px) {
+    margin:20px 20px 0px 20px
+}
+
+@media (max-width: 280px) {
+    margin:10px 10px 0px 10px;
+}
+    }
+}
 }

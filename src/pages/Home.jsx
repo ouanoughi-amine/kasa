@@ -7,10 +7,10 @@ function Home() {
   
   return (
     
-    <>
+    <main>
       <Banner imgBanner={ImageHomeBanner} showTitleBanner={true} />
       <Gallery />
-    </>
+    </main>
 
   )
 }
