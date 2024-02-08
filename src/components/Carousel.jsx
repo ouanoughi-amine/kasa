@@ -31,8 +31,8 @@ const notHidden = images.length  > 1;
          (si le nombre d'element de la liste est sup a 1)  */}
           {notHidden && 
         <div className='carousel__arrow'>
-          <img src={ArrowLeft} alt="arrow left" onClick={prevImage}/>
-            <img src={ArrowRight} alt="arrow right" onClick={nextImage} />
+          <img src={ArrowLeft} className='carousel__arrow__ref' alt="arrow left" onClick={prevImage}/>
+            <img src={ArrowRight} className='carousel__arrow__ref' alt="arrow right" onClick={nextImage} />
         </div>
             }
         <img src={images[imageIndex]} alt='photo appartement'  className='carousel__img'></img>

@@ -8,11 +8,17 @@
     &__main{
         font-size: $big-font-size;
         line-height: 51.34px;
+        @media (max-width : 768px) {
+            font-size: 18px;
+        }
 
     }
     &__text{
         font-size: $small-font-size;
         line-height: 25.67px;
+        @media (max-width : 768px) {
+            font-size: 14px;
+        }
     }
     
 }

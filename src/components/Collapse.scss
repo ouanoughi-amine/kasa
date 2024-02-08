@@ -1,7 +1,7 @@
 
 @import '../Variables.scss';
 
-// Ajout de ses deux classes dans les comp parents (about et product)(la width est differente) 
+// Ajout de ses deux classes dans les composants parents (about et product)(la width est differente) 
 .collapse--about{
     width: 1023px;   
     @media (max-width: 1065px) {
@@ -12,20 +12,20 @@
 .collapse--product{
     width: 582px;
     
-    @media (max-width: 1235px) {
-        width: 480px;     
-    }
+    // @media (max-width: 1235px) {
+    //     width: 480px;     
+    // }
 
-    @media (max-width: 1033px) {
-        width: 415px;     
-    }
+    // @media (max-width: 1033px) {
+    //     width: 415px;     
+    // }
 
-    @media (max-width: 915px) {
-        width: 335px;     
-    }
-    @media (max-width: 350px) {
-        width: 250px;     
-    }
+    // @media (max-width: 915px) {
+    //     width: 335px;     
+    // }
+    // @media (max-width: 350px) {
+    //     width: 250px;     
+    // }
 }
 
 /**********************************COLLAPSE***********************************************/
@@ -42,30 +42,34 @@
     
         
 
-        @media (max-width: 520px) {
+        @media (max-width: 768px) {
             height: 40px;
         }
 
-        @media (max-width: 380px) {
-            height: 30px;
-        }
+        // @media (max-width: 520px) {
+        //     height: 30px;
+        // }
 
         .dropdown__title {
             color:$white-color;
             font-size: $small-font-size;
            
-            @media (max-width: 520px) {
-                font-size:$small-font-size;
+            @media (max-width: 768px) {
+                font-size :13px;
             }
-            @media (max-width: 380px) {
-                font-size:13px;
-            }
+            // @media (max-width: 380px) {
+            //     font-size:13px;
+            // }
         }
 
         .dropdown__arrow {
             width: 32px;
             height: 32px;
             transition: transform 0.6s ease;
+            @media (max-width : 768px){
+                width: 25px;
+                height: 25px;
+            }
         }
 
         .dropdown__arrow--rotated {
@@ -82,9 +86,9 @@
         transition: max-height 0.6s ease;
         color:$red-color ;
         
-        @media (max-width: 520px) {
-            font-size: 13px;
-        }
+        // @media (max-width: 520px) {
+        //     font-size: 13px;
+        // }
 
         &--visible {
             max-height: 300px;

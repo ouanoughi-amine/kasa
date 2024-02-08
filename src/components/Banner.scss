@@ -2,23 +2,20 @@
 
 .banner {
     position: relative;
-    // margin: 50px 100px 0 100px;
     margin-top: 50px;
     max-width: 1240px;
     border-radius:$big-border-radius;
     max-height: 223px;
     height: 100%;
     overflow: hidden;
-    @media (max-width : 900px){
-
+    background-color: $black-background;
+   
+    @media (max-width : 768px){
+        max-height:111px ;
+        height: 100%;
+        margin-top: 27px;
     }
-    &::before {
-        position: absolute;
-        content: "";
-        inset:0;
-        border-radius: $big-border-radius;
-        background-color:$light-black-background;
-    }
+  
     &__image{
         border-radius: $big-border-radius;
         width: 100%;
@@ -27,6 +24,8 @@
         max-height: 223px;
         object-fit: cover;
         object-position: center;
+        opacity: 70%;
+        
     }
     &__title  {
         position: absolute;
@@ -35,9 +34,20 @@
         transform: translate(-50%, -50%);
         line-height: 68.45px;
         font-size: $bigger-font-size;
-        font-weight: 700;
         max-width:705px;
         width: 100%;
         color: $white-color;
+        z-index: 5;
+        @media (max-width : 768px){
+            font-size:$medium-font-size ;
+            line-height: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding:0 16px 0 16px;
+
+    
+        }
     }
 }

@@ -2,9 +2,22 @@
 
 
 .items{
-    // margin:30px 100px 0 100px ;
-    margin-top: 50px;
+    margin-top: 30px;
     max-width: 1240px;
     display: flex;
     justify-content: space-between;
+    @media (max-width : 768px){
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    
+}
+.Items__block--host{
+    @media (max-width : 768px){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 }

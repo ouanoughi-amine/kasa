@@ -14,6 +14,7 @@ function Rate({ numberStar }) {
             // si la valeur de iconStarNumber est sup a la valeur de l'index (donc 5) tu importe Colorstar sinon tu importe ColorGrey
             src={index < numberStar ? StarColor : StarGrey}
             alt={`étoile`}
+            className='rate__image'
           />
         ))}
 

@@ -8,6 +8,9 @@
     margin-top: 50px;
    
     border-radius: $big-border-radius;
+    @media (max-width : 768px) {
+        height: 255px;
+    }
 
 
     
@@ -30,6 +33,14 @@
         height: 100%;
         padding: 0 25px;  
         z-index: 1;
+      
+        &__ref{
+            @media (max-width : 768px){
+                width: 24px;
+                height: 24px;
+
+            }
+        }
 
     }
     &__numbers{
@@ -41,6 +52,11 @@
         width: 100%;  
         font-size: $small-font-size ;
         line-height: 25.67px;
+        @media (max-width : 768px){
+            font-size: 14px;
+            line-height: 17px;
+
+        }
     }
  
 

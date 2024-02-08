@@ -7,7 +7,7 @@ function Home() {
   
   return (
     
-    <main>
+    <main className='home__block'>
       <Banner imgBanner={ImageHomeBanner} showTitleBanner={true} />
       <Gallery />
     </main>
