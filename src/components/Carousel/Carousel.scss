@@ -4,12 +4,12 @@
 .carousel{
     height: 415px;
     position: relative;
-    // margin: 0 100px 30px 100px;
-    margin-top: 50px;
+
    
     border-radius: $big-border-radius;
-    @media (max-width : 768px) {
+    @media (max-width : 767px) {
         height: 255px;
+        margin-top: 0;
     }
 
 
@@ -35,7 +35,7 @@
         z-index: 1;
       
         &__ref{
-            @media (max-width : 768px){
+            @media (max-width : 767px){
                 width: 24px;
                 height: 24px;
 
@@ -52,7 +52,7 @@
         width: 100%;  
         font-size: $small-font-size ;
         line-height: 25.67px;
-        @media (max-width : 768px){
+        @media (max-width : 767px){
             font-size: 14px;
             line-height: 17px;
 

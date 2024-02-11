@@ -1,10 +1,10 @@
-import Carousel from "../components/Carousel";
-import ApartmentList from '../Data/apartment.json';
-import Collapse from '../components/Collapse';
+import Carousel from "../../components/Carousel/Carousel.jsx";
+import ApartmentList from './../../Data/apartment.json';
+import Collapse from '../../components/Collapse/Collapse.jsx';
 import { useParams } from 'react-router-dom';
-import ItemsContainer from '../components/ItemsContainer/ItemsContainer';
-import NotFound from '../pages/NotFound'
-import '../pages/Product.scss'
+import ItemsContainer from '../../components/ItemsContainer/ItemsContainer';
+import NotFound from '../NotFound/NotFound'
+import './Product.scss'
 
 const Product = () => {
   const { id } = useParams();
@@ -14,7 +14,7 @@ const Product = () => {
     return <NotFound />;
   }
 
-  const collapseText = [
+  const collapseTexts = [
     { label: 'Description', text: apartment.description },
     { label: 'Equipement', text: apartment.equipments },
   ];
@@ -26,8 +26,8 @@ const Product = () => {
       </section>
       <ItemsContainer apartment= {apartment}/>
       <section className="product__container__collapse">
-        {collapseText.map((item, index) => (
-          <Collapse key={index} title={item.label} description={item.text} />
+        {collapseTexts.map((item, index) => (
+          <Collapse className='collapse--product' key={index} title={item.label} description={item.text} />
         ))}
       </section>
     </main>

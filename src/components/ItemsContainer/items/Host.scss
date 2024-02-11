@@ -7,7 +7,7 @@
     align-items: center;
     gap: 10px;
     margin-bottom: 20px;
-    @media (max-width : 768px){
+    @media (max-width : 767px){
         order: 1;
         
     }
@@ -17,7 +17,7 @@
         line-height: 22.67px;
         text-align: right;
         width: 50%;
-        @media (max-width : 768px){
+        @media (max-width : 767px){
             font-size: 12px;
             line-height: 17.11px;
         }
@@ -33,7 +33,7 @@
         height: 64px;
         background-color:$dark-grey-background;
         border-radius: 50%;
-        @media (max-width : 768px){
+        @media (max-width : 767px){
             width: 32px;
             height: 32px;
           

@@ -1,5 +1,5 @@
-import Error404 from "../components/Error404";
-import imageError from "../assets/imageError.png"
+import Error404 from "../../components/Error4004/Error404.jsx";
+import imageError from "./../../assets/imageError.png"
 
 
 const textForError="Oups! La page que vous demandez n'existe pas."

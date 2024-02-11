@@ -1,11 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Footer from './src/components/Footer.jsx';
-import Header from './src/components/Header.jsx';
-import About from './src/pages/About.jsx';
-import NotFound from './src/pages/NotFound.jsx';
-import Product from './src/pages/Product.jsx';
-import Home from './src/pages/Home.jsx';
+import Footer from './src/components/Footer/Footer.jsx';
+import Header from './src/components/Header/Header.jsx';
+import About from './src/pages/About/About.jsx';
+import NotFound from './src/pages/NotFound/NotFound.jsx';
+import Product from './src/pages/Product/Product.jsx';
+import Home from './src/pages/Home/Home.jsx';
 
+
+// Pour éviter de  répeter l'appel de nos composants header et footer dans nos composants on les inclues dans notre router
 const App = () => (
     <Router>
     <Header />

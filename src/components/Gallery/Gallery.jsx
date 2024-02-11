@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import './Gallery.scss'
-import ApartmentList from '../Data/apartment.json';
-import Cards from './Cards.jsx';
+import ApartmentList from '../../Data/apartment.json';
+import Cards from '../Cards/Cards.jsx';
 
 
 function Gallery() {

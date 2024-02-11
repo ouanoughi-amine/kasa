@@ -4,9 +4,8 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
-   margin: 38px  108.5px 0 108.5px;
-
-   @media  (max-width: 768px){
-    margin: 38px auto 36px auto;
+    margin: 38px 108.5px;
+   @media  (max-width: 767px){
+        margin: 38px auto 36px auto;
    }
 }

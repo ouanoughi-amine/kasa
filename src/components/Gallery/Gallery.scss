@@ -8,7 +8,7 @@
     column-gap: 60px;
     row-gap: 50px;
     // margin: 43px 100px;
-    margin-top: 43px;
+    margin: 43px 0 50px 0;
     padding: 56px 50px 43px 50px;
     background-color:$grey-background;
     border-radius:$big-border-radius ;
@@ -24,8 +24,8 @@
     //     width: 100%;
     
     // }
-    @media (max-width : 768px) {
-       margin-top: 22px;
+    @media (max-width : 767px) {
+       margin: 22px 0 27px 0;
        grid-template-columns: repeat(1,1fr);
        row-gap:20px;
        background-color: $white-background;
