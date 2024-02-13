@@ -1,0 +1,80 @@
+
+@import '../Variables.scss';
+
+// Ajout de ses deux classes dans les composants parents (about et product)(la width est differente) 
+.collapse--about{
+    width: 1023px;   
+    @media (max-width: 1065px) {
+       width: 100%;
+    }
+}
+.collapse--product{
+    max-width: 1200px;
+    width: 100%;
+}
+
+/**********************************COLLAPSE***********************************************/
+.collapse {
+
+    &__dropdown {
+        height: 52px;
+        padding: 10px 20px 10px 15px;
+        background-color: $red-background;
+        border-radius: $small-border-radius;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        
+
+        @media (max-width: 767px) {
+            height: 40px;
+        }
+
+        .dropdown__title {
+            color:$white-color;
+            font-size: $small-font-size;
+           
+            @media (max-width: 767px) {
+                font-size :13px;
+            }
+        }
+
+        .dropdown__arrow {
+            width: 32px;
+            height: 32px;
+            transition: transform 0.6s ease;
+            @media (max-width : 767px){
+                width: 25px;
+                height: 25px;
+            }
+        }
+
+        .dropdown__arrow--rotated {
+            transform: rotate(-180deg);
+        }
+    }
+    
+    &__text {
+        background-color:$grey-background;
+        border-radius: $small-border-radius;
+        font-size: $small-font-size;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.5s ease;
+        color:$red-color ;
+
+        @media (max-width: 767px) {
+            font-size: 13px;
+        }
+
+        &--visible {
+            max-height: 300px;
+            transition: max-height 1.3s ease; 
+        }
+    }
+
+    &__text p{
+        margin: 10px 20px 10px 15px; 
+    }
+}

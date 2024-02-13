@@ -1,0 +1,8 @@
+.rate{
+    &__image{ 
+        @media (max-width:767px){
+            width: 18px;
+            height: 18px;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@import '../Variables.scss';
+
+
+.items{
+    margin-top: 30px;
+    max-width: 1240px;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width : 767px){
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    
+}
+.Items__block--host{
+    @media (max-width : 767px){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

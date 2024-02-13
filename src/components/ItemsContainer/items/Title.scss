@@ -1,0 +1,21 @@
+@import '../Variables.scss';
+
+
+.title{
+    color:$red-color;
+    margin-bottom: 20px;
+    &__main{
+        font-size: $big-font-size;
+        line-height: 51.34px;
+        @media (max-width : 767px) {
+            font-size: $small-font-size;
+        }
+    }
+    &__text{
+        font-size: $small-font-size;
+        line-height: 25.67px;
+        @media (max-width : 767px) {
+            font-size: $smaller-font-size;
+        }
+    }
+}

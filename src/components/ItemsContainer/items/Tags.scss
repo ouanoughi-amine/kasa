@@ -1,0 +1,25 @@
+@import '../Variables.scss';
+
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px ;
+    height: 25px;
+    margin-bottom: 20px;
+    &__text{
+        background-color:$red-background;
+        border-radius:$medium-border-radius;
+        color:$white-color ;
+        font-size: $smaller-font-size;
+        line-height: 19.96px;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media (max-width : 767px) {
+           height: 18px;
+           font-size: 10px;  
+        }
+    }
+}

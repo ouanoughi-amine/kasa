@@ -1,0 +1,37 @@
+@import '../Variables.scss';
+
+
+.host{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+        @media (max-width : 767px){
+            order: 1;
+        }
+  
+    &__name{
+        font-size: $small-font-size;
+        line-height: 22.67px;
+        text-align: right;
+        width: 50%;
+        @media (max-width : 767px){
+            font-size: 12px;
+            line-height: 17.11px;
+        }
+    }
+ 
+    &__image{
+        max-width: 64px;
+        width: 100%;
+        max-height: 64px;
+        height: 64px;
+        background-color:$dark-grey-background;
+        border-radius: 50%;
+        @media (max-width : 767px){
+            width: 32px;
+            height: 32px;
+        }
+    }
+}
