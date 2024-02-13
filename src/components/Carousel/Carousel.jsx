@@ -1,19 +1,24 @@
-import './Carousel.scss'
+import { useState } from 'react'
 import ArrowLeft from '../../assets/Arrow-left.png'
 import ArrowRight from '../../assets/Arrow-right.png'
-import { useState } from 'react'
+import './Carousel.scss'
 
+//  ** Pour la page Product **
 const Carousel = ({images}) => {
 
+    // Déclaration de l'état local 'imageIndex' qui représente l'index de l'image actuellement affichée
 const [imageIndex, setImageIndex] = useState (0);
 const notHidden = images.length  > 1;
 
-    //  Si l'image actuelle est la dernière, on revient à la première image
-    // Sinon, on passe à l'image suivante.
+     // Mise à jour de l'index de l'image en utilisant une fonction de rappel (callback) qui prend l'index actuel comme paramètre.
+// Si l'index actuel est égal à la longueur totale des images moins 1, l'index est remis à zéro (retour à la première image),
+// sinon l'index est augmenté de 1 pour passer à l'image suivante.
   const nextImage = () => {
     setImageIndex((imageIndex) => (imageIndex === images.length - 1 ? 0 : imageIndex + 1));
   };
-  
+
+// Si l'index actuel est égal à 0, l'index est défini sur la longueur totale des images moins 1 (retour à la dernière image),
+// sinon l'index est diminué de 1 pour passer à l'image précédente.
   const prevImage = () => {
     setImageIndex((imageIndex) => (imageIndex === 0 ? images.length - 1 : imageIndex - 1));
   }

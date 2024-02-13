@@ -1,5 +1,8 @@
 import './Banner.scss'
 
+
+
+// ** Home et About **
 const Banner = ({imgBanner, showTitleBanner}) => {
   return (
     <div className='banner'>

@@ -1,19 +1,7 @@
 
 @import '../Variables.scss';
 
-// Ajout de ses deux classes dans les composants parents (about et product)(la width est differente) 
-.collapse--about{
-    width: 1023px;   
-    @media (max-width: 1065px) {
-       width: 100%;
-    }
-}
-.collapse--product{
-    max-width: 1200px;
-    width: 100%;
-}
 
-/**********************************COLLAPSE***********************************************/
 .collapse {
 
     &__dropdown {
@@ -59,10 +47,10 @@
         background-color:$grey-background;
         border-radius: $small-border-radius;
         font-size: $small-font-size;
+        color:$red-color ;
         overflow: hidden;
         max-height: 0;
         transition: max-height 0.5s ease;
-        color:$red-color ;
 
         @media (max-width: 767px) {
             font-size: 13px;
