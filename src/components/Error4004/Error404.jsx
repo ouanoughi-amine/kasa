@@ -1,7 +1,7 @@
 import  './Error404.scss'
 import { NavLink } from 'react-router-dom'
 
-function Error404({imgError,textError,linkText}) {
+const Error404 = ({imgError,textError,linkText}) => {
   return (
     <div className='Error__block' >
         <div className='Error__block--image--block'>

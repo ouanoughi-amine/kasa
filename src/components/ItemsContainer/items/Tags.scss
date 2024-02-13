@@ -6,7 +6,6 @@
     flex-wrap: wrap;
     gap:10px ;
     height: 25px;
-//    max-width: 700px;
     margin-bottom: 20px;
     &__text{
         background-color:$red-background;
@@ -18,11 +17,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        // min-width: 115px;
         @media (max-width : 767px) {
            height: 18px;
-           font-size: 10px; 
-            
+           font-size: 10px;  
         }
     }
 }

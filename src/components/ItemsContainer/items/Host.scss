@@ -7,10 +7,9 @@
     align-items: center;
     gap: 10px;
     margin-bottom: 20px;
-    @media (max-width : 767px){
-        order: 1;
-        
-    }
+        @media (max-width : 767px){
+            order: 1;
+        }
   
     &__name{
         font-size: $small-font-size;
@@ -21,9 +20,6 @@
             font-size: 12px;
             line-height: 17.11px;
         }
-    
-
-
     }
  
     &__image{
@@ -36,7 +32,6 @@
         @media (max-width : 767px){
             width: 32px;
             height: 32px;
-          
         }
     }
 }

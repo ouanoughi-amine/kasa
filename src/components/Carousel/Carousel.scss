@@ -4,15 +4,11 @@
 .carousel{
     height: 415px;
     position: relative;
-
-   
     border-radius: $big-border-radius;
     @media (max-width : 767px) {
         height: 255px;
         margin-top: 0;
     }
-
-
     
     &__img{
         position: absolute;
@@ -20,9 +16,8 @@
         width: 100%;
         height: 100%;
         border-radius: $big-border-radius;
-
-
     }
+
     &__arrow{
         display: flex;
         flex-direction: row;
@@ -38,10 +33,8 @@
             @media (max-width : 767px){
                 width: 24px;
                 height: 24px;
-
             }
         }
-
     }
     &__numbers{
         position: absolute;
@@ -53,11 +46,8 @@
         font-size: $small-font-size ;
         line-height: 25.67px;
         @media (max-width : 767px){
-            font-size: 14px;
+            font-size: $smaller-font-size;
             line-height: 17px;
-
         }
     }
- 
-
 }

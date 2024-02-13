@@ -1,6 +1,6 @@
 import './Title.scss'
 
-function Title({title, location}) {
+const Title = ({title, location}) => {
   return (
     <div className='title'>
         <h2 className='title__main'>{title}</h2>

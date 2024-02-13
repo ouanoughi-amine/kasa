@@ -4,18 +4,18 @@ import Host  from './items/Host'
 import Rate  from './items/Rate'
 import './ItemsContainer.scss'
 
-function ItemsContainer({apartment}) {
+const ItemsContainer = ({apartment}) => {
   return (
-    <div className='items'>
+  <div className='items'>
     <div className='Items__block--title'>
       <Title title={apartment.title} location={apartment.location}/>
       <Tags tags={apartment.tags} />
-      </div>
-      <div className='Items__block--host'>
+    </div>
+    <div className='Items__block--host'>
       <Host host={apartment.host} />
       <Rate numberStar={apartment.rating} />
-      </div>
-      </div>
+    </div>
+  </div>
   )
 }
 

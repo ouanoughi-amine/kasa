@@ -7,7 +7,7 @@ import './About.scss';
 
 
 
-function About (){
+const About = () => {
 return(
 <main className = 'about'>
 <Banner imgBanner={ImageAboutBanner} showTitleBanner={false} />

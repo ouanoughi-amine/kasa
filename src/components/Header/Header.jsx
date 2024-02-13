@@ -2,25 +2,25 @@ import { NavLink } from "react-router-dom"
 import './Header.scss'
 import logoKasaColor from '../../assets/logo-kasa-color.png'
 
-function Header() {
+const Header = () => {
   return (
-    <header className='header'>
+<header className='header'>
     
-      <img src={logoKasaColor} className='header__logo' alt='logo kasa'></img>
+  <img src={logoKasaColor} className='header__logo' alt='logo kasa'></img>
     
-    <nav>
+  <nav>
     <ul className='header__navbar'>
 
-    <NavLink to={'/'}>
-    <li  className='header__navbar__link' >Accueil</li>
-    </NavLink>
+      <NavLink to={'/'}>
+        <li  className='header__navbar__link' >Accueil</li>
+      </NavLink>
 
-    <NavLink to={'/about'}>
-    <li className='header__navbar__link' >A propos</li>
-    </NavLink>
-</ul> 
-</nav>
-    </header>
+      <NavLink to={'/about'}>
+        <li className='header__navbar__link' >A propos</li>
+      </NavLink>
+    </ul> 
+  </nav>
+</header>
   )
 }
 

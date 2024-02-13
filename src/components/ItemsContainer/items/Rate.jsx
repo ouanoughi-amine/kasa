@@ -4,7 +4,7 @@ import StarGrey from './../../../assets/star-grey.png'
 
 
 
-function Rate({ numberStar }) {
+const Rate = ({ numberStar }) => {
   return (
     <div className='rate'>
      {/* //on indique qu'il y a 5 element dans notre tableau */}

@@ -1,7 +1,7 @@
 import './Host.scss'
 
 
-function Host({host}) {
+const Host = ({host}) => {
   return (
     <div className='host'>
       <p className='host__name'>{host.name}</p>

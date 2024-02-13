@@ -2,7 +2,7 @@ import './Collapse.scss'
 import  { useState } from 'react';
 
 
-function Collapse( {className,title, description}) {
+const Collapse = ({className,title, description}) => {
   const [isRotated, setRotated] = useState(false);
   const [isTextVisible, setTextVisible] = useState(false);
 

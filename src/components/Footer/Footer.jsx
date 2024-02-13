@@ -2,7 +2,7 @@ import './Footer.scss'
 import logoFooter from '../../assets/logo-footer.png'
 
 
-function Footer() {
+const Footer= () => {
   return (
     <footer className='footer'>
        <img src={logoFooter} className='footer__logo' alt="logo kas " />

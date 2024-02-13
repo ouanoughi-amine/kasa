@@ -4,7 +4,7 @@ import ApartmentList from '../../Data/apartment.json';
 import Cards from '../Cards/Cards.jsx';
 
 
-function Gallery() {
+const Gallery = () => {
 
   return (
    <div className='container__gallery'>
