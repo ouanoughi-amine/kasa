@@ -7,7 +7,9 @@ import NotFound from '../NotFound/NotFound'
 import './Product.scss'
 
 const Product = () => {
+    // On obtient l'ID de l'appartement à partir des paramètres de l'URL
   const { id } = useParams();
+    // Trouve l'objet appartement dans la liste en fonction de l'ID
   const apartment = ApartmentList.find((apartment) => apartment.id === id);
 
   if (!apartment) {

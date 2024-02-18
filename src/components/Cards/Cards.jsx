@@ -1,6 +1,6 @@
 import './Cards.scss'
 
-// ** Les cards qui sont utiliser dans gallery **
+
 const Cards =({imgCards, titleCards}) => {
   return (
     <div className='card'>

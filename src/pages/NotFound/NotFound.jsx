@@ -1,4 +1,4 @@
-import Error404 from "../../components/Error4004/Error404.jsx";
+import Error404 from "../../components/Error404/Error404.jsx";
 import imageError from "./../../assets/imageError.png"
 
 
