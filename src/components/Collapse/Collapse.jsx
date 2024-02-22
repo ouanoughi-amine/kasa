@@ -24,13 +24,13 @@ const Collapse = ({className, title, description}) => {
   return (
     <div className={`collapse ${className}`}>
         {/* sur le click on appelle la fonction visibletext qui contient nos deux changement d'etat */}
-        <div className="collapse__dropdown" onClick={visibleText}>
+        <div className="collapse__dropdown" >
             <p className='dropdown__title'>{title}</p>
-            <img src='../src/assets/dropdown.png' className={changeClassName()} alt="fleche directionnelle"/>
+            <img src='../src/assets/dropdown.png' onClick={visibleText} className={changeClassName()} alt="fleche directionnelle"/>
         </div>
          {/* si isTextVisible = true on rajoute la classe collapse text--visible sinon on rajoute rien */}
         <div className={`collapse__text ${isTextVisible ? 'collapse__text--visible' : ''}`}>
-            {/* // Si c'est un tableau, affiche chaque élément dans un paragraphe */}
+            {/* // Si c'est un tableau, on affiche chaque élément dans un paragraphe */}
             {Array.isArray(description) ? (
                 description.map(item => <p key={item}>{item}</p>)
             ) : (

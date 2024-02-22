@@ -27,9 +27,8 @@ const notHidden = images.length  > 1;
           <img src={ArrowLeft} className='carousel__arrow__ref' alt="arrow left" onClick={prevImage}/>
             <img src={ArrowRight} className='carousel__arrow__ref' alt="arrow right" onClick={nextImage} />
         </div>
-            }
-            
-        <img src={images[imageIndex]} alt='photo appartement'  className='carousel__img'></img>
+        }
+            <img src={images[imageIndex]} alt='photo appartement'  className='carousel__img'></img>
         {notHidden &&         
         <p className='carousel__numbers'>{imageIndex + 1}/{images.length}</p>   
         }

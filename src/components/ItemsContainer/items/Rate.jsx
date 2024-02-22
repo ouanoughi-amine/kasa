@@ -11,7 +11,7 @@ const Rate = ({ numberStar }) => {
      {Array.from({ length: 5 }, (item, index) => (
           <img
             key={index}
-            // si la valeur de iconStarNumber est sup a la valeur de l'index (donc 5) tu importe rstarColor sinon tu importe starGrey
+            // si la valeur de iconStarNumber est sup a la valeur de l'index (donc 5) tu importe starColor sinon tu importe starGrey
             src={index < numberStar ? StarColor : StarGrey}
             alt={`étoile`}
             className='rate__image'
